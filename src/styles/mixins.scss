@@ -1,0 +1,5 @@
+@mixin mainButton($border,$radius, $padding) {
+  border: $border;
+  border-radius: $radius;
+  padding: $padding;
+}
