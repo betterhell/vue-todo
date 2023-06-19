@@ -7,7 +7,7 @@ const inputText = ref("")
 
 const handleNewTodo = () => {
   if (!inputText.value) return
-  store.dispatch("handleAddNewTodo", inputText.value)
+  store.dispatch("handleAddNewTodo", inputText.value.trim())
   inputText.value = ""
   toast.success("New task created!", {position: "bottom-right"})
 }

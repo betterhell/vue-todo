@@ -6,12 +6,12 @@ const todos = store.getters.allTodos
 </script>
 
 <template>
-  <div class="todo-list">
+  <div v-auto-animate class="todo-list">
     <h1 v-if="!todos.length">It's very quiet here... write something!</h1>
     <h1 v-else>Oh, your tasks...</h1>
-    <ul v-for="todo in todos" :key="todo.id">
-      <TodoItem v-bind:todo="todo" />
-    </ul>
+      <ul v-for="todo in todos" :key="todo.id">
+        <TodoItem v-bind:todo="todo" />
+      </ul>
   </div>
 </template>
 
