@@ -61,6 +61,7 @@ const handleComplete = (id: string) => {
 }
 
 .todo-list__item {
+  transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
   align-items: center;
