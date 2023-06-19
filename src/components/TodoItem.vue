@@ -33,7 +33,7 @@ const handleComplete = (id: string) => {
 <template>
   <li class="todo-list__item" v-bind:class="{ 'completed' : todo.completed }">
     <p @click="handleComplete(todo.id)" v-if="!toggleEdit">{{todo.text}}</p>
-    <input v-model="newTodoText" v-else :placeholder=todo.text type="text" />
+    <input @keyup.enter="handleEdit(todo.id)" v-model="newTodoText" v-else :placeholder=todo.text type="text" />
     <div>
       <button class="button__edit" v-if="!toggleEdit" @click="toggleEditor">
         <Icon icon="uil:edit" />

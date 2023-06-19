@@ -4,13 +4,11 @@ import {TodoModel} from "../models/TodoModel";
 import {vuexLocal} from "../localStorage";
 
 interface StoreProps {
-    text: string,
     todos: TodoModel[]
 }
 
 export const store = createStore<StoreProps>({
     state: {
-        text: "",
         todos: []
     },
     mutations: {
