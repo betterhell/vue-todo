@@ -18,7 +18,7 @@ export const store = createStore<StoreProps>({
                 text: payload,
                 completed: false,
             }
-            state.todos.push(newTodo)
+            state.todos.unshift(newTodo)
         },
         DELETE_TODO (state, payload) {
             const todoIndex = state.todos.findIndex(todo => todo.id === payload);
