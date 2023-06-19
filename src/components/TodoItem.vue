@@ -20,8 +20,7 @@ const toggleEditor = () => {
 
 const handleEdit = (id: string) => {
   if (!newTodoText.value) return
-  store.state.text = newTodoText.value
-  store.dispatch("handleEditTodo", id)
+  store.dispatch("handleEditTodo", {id, text: newTodoText.value})
   toggleEdit.value = false
   toast.success("Task Updated!", {position: "bottom-right"})
 }
