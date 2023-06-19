@@ -8,7 +8,6 @@ import VueKinesis from "vue-kinesis";
 // @ts-ignore
 import { KinesisContainer, KinesisElement } from 'vue-kinesis'
 
-
 import 'vue3-toastify/dist/index.css';
 
 const app = createApp(App)

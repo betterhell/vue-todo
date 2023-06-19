@@ -15,6 +15,10 @@ import NavBar from "./components/NavBar.vue";
 <style scoped>
 @import "./styles/font.scss";
 
+body {
+  background: #FCFDFC;
+}
+
 header, main, footer {
   font-family: 'Roboto', sans-serif;
 }
