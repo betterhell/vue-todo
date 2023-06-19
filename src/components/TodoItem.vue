@@ -26,7 +26,7 @@ const handleEdit = (id: string) => {
 }
 
 const handleComplete = (id: string) => {
-  store.dispatch("toggleTodo", id)
+  store.dispatch("handleToggleTodo", id)
 }
 </script>
 

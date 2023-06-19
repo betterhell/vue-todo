@@ -50,7 +50,7 @@ export const store = createStore<StoreProps>({
         handleEditTodo ({commit}, id) {
             commit("EDIT_TODO", id)
         },
-        toggleTodo: ({commit}, id) => {
+        handleToggleTodo: ({commit}, id) => {
             commit("TOGGLE_TODO", id);
         },
     },

@@ -1,13 +1,12 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
-  <div class="landing">
+  <kinesis-container class="landing">
     <h1>Hey, this is a Simple Todo Application!</h1>
     <p>You can use it when you need to control the execution of any plan or task.</p>
-    <router-link to="/todos">Ok, let go!</router-link>
-  </div>
+    <kinesis-element :strength="10" type="scale" ><router-link to="/todos">Ok, let go!</router-link></kinesis-element>
+  </kinesis-container>
 </template>
 
 <style lang="scss" scoped>

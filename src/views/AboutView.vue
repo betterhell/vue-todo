@@ -2,11 +2,11 @@
 </script>
 
 <template>
-  <div class="about">
+  <kinesis-container class="about">
     <h1>My name is Dmitriy</h1>
     <p>This is About block. And you can check my profile :)</p>
-    <a target="_blank" href="https://github.com/betterhell">Github</a>
-  </div>
+    <kinesis-element :strength="10" type="scale"><a target="_blank" href="https://github.com/betterhell">Github</a></kinesis-element>
+  </kinesis-container>
 </template>
 
 <style lang="scss" scoped>
