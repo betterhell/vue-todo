@@ -14,7 +14,8 @@ import TodoList from "../components/TodoList.vue";
 @import "../styles/variables";
 
 .todo-wrapper {
-  max-width: 344px;
+  max-width: 400px;
+  width: 100%;
   padding: $main-padding;
 }
 </style>
