@@ -11,7 +11,7 @@ Powered by:
 <li>Vue.js</li>
 <li>Vuex</li>
 <li>Vue Router</li>
-<li>Iconofy</li>
+<li>Iconify</li>
 <li>SCSS</li>
 <li>Toastify</li>
 </ul>
