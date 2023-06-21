@@ -7,9 +7,10 @@ const inputText = ref("")
 
 const handleNewTodo = () => {
   if (!inputText.value) return
+  if (inputText.value.trim() === "") return
   store.dispatch("handleAddNewTodo", inputText.value.trim())
   inputText.value = ""
-  toast.success("New task created!", {position: "bottom-right"})
+  toast.success("New task created!", {position: "bottom-right", autoClose: 2000})
 }
 </script>
 
@@ -37,6 +38,7 @@ const handleNewTodo = () => {
   button {
     cursor: pointer;
     right: 0;
+    bottom: 0;
     position: absolute;
     padding: 12px;
     border: 2px solid $bg-color;

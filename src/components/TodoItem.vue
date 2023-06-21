@@ -11,7 +11,7 @@ const newTodoText = ref("")
 
 const handleDelete = (id: string) => {
   store.dispatch("handleDeleteTodo", id)
-  toast.warn("Task Deleted!", {position: "bottom-right"})
+  toast.warn("Task Deleted!", {position: "bottom-right", autoClose: 2000})
 }
 
 const toggleEditor = () => {
@@ -22,7 +22,7 @@ const handleEdit = (id: string) => {
   if (!newTodoText.value) return
   store.dispatch("handleEditTodo", {id, text: newTodoText.value.trim()})
   toggleEdit.value = false
-  toast.success("Task Updated!", {position: "bottom-right"})
+  toast.info("Task Updated!", {position: "bottom-right", autoClose: 2000})
 }
 
 const handleComplete = (id: string) => {
