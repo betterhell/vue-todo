@@ -25,10 +25,11 @@ const handleNewTodo = () => {
 
 .input {
   position: relative;
+  width: 100%;
 
   input {
     padding: 12px 75px 12px 12px;
-    width: calc(100% - 100px);
+    width: calc(100% - 91px);
     border: 2px solid $bg-color;
     outline: transparent;
   }
